@@ -2,639 +2,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/header.css"/>
-    <link rel="stylesheet" href="css/content.css"/>
-    <link rel="stylesheet" href="css/sideBar.css"/>
-    <script type="text/javascript" src="js/vip.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=0" />
+	<title>赵富国个人简历</title>
+	<!-- 标题图标 -->
+	<link rel="icon" href="img/toy.png" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="dest/all.min.css">
 </head>
-<body id="container">
-<!--侧边栏设置开始-->
-    <div id="hidezero" style="z-index:101;">
-        <div>
-            <div id="zeroimg">
-                <img src="images/login.png" alt=""/>
-                <p id="closezero">&times;</p>
-                <div id="zeroimgf">你好！<a href="#">请登录</a> | <a href="#">注册</a></div>
-                <ul id="zeroUl">
-                    <li class="zerowide">
-                        <div id="zeroone"></div>
-                        <p>我的订单</p>
-                    </li>
-                    <li class="zeronarrow"></li>
-                    <li class="zerowide">
-                        <div id="zerotwo"></div>
-                        <p>我的消息</p>
-                    </li>
-                </ul>
-                <div id="zeroVIP"><a href="#">会员俱乐部</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="hidMenu">
-<div id="hidOne">我的优惠券</div>
-<div id="hidTwo">我收藏的品牌</div>
-<div id="hidThree">我收藏的商品</div>
-<div id="hidFour">会员反馈</div>
-<div id="hidFive">返回顶部</div>
-</div>
-    <div id="asideMenu" style="z-index:999;">
-        <!--<div class="hidMenu">-->
-            <!--<div id="hidOne">我的优惠券</div>-->
-            <!--<div id="hidTwo">我收藏的品牌</div>-->
-            <!--<div id="hidThree">我收藏的商品</div>-->
-            <!--<div id="hidFour">会员反馈</div>-->
-            <!--<div id="hidFive">返回顶部</div>-->
-        <!--</div>-->
-        <div class="aside" id="accountNumber"></div>
-        <div class="aside" id="voucher"></div>
-        <div class="aside" id="brand"></div>
-        <div class="aside" id="commodity"></div>
-        <div class="asideA" id="shoppingBag"><div id="shobag"></div><div id="shoText">购物袋</div><div id="shoCount"></div></div>
-        <div class="aside" id="reaction" ></div>
-        <div class="aside" id="toTop"></div>
-    </div>
-</div>
-
-<!--侧边栏设置结束-->
-<!--头部设置开始-->
-<header>
-    <!-- 头部导航栏设置开始-->
-    <div class="head-top" id="htop">
-        <div class="center">
-            <div class="address">
-                <a class="address-main" href="javascript:void(0);">浙江<i><s>◆</s></i></a>
-                <div class="address-after"></div>
-                <div class="adddropdown">
-                    <h1>请选择所在地收货地址</h1>
-                    <p><span>A</span><a href="javascript:">安徽</a><a href="javascript:void(0);">澳门</a></p>
-                    <p><span>B</span><a href="javascript:;">北京</a></p>
-                    <p><span>C</span><a href="javascript:;">重庆</a></p>
-                    <p><span>F</span><a href="javascript:;">福建</a></p>
-                    <p><span>G</span><a href="javascript:;">广东</a><a href="javascript:;">广西</a><a href="javascript:;">贵州</a><a href="javascript:;">甘肃</a></p>
-                    <p><span>H</span><a href="javascript:;">河北</a><a href="javascript:;">河南</a><a href="javascript:;">黑龙江</a><a href="javascript:;">海南</a><a href="javascript:;">湖北</a><a href="javascript:;">湖南</a></p>
-                    <p><span>J</span><a href="javascript:;">江苏</a><a href="javascript:;">吉林</a><a href="javascript:;">江西</a></p>
-                    <p><span>L</span><a href="javascript:;">辽宁</a></p>
-                    <p><span>N</span><a href="javascript:;">内蒙古</a><a href="javascript:;">宁夏</a></p>
-                    <p><span>Q</span><a href="javascript:;">青海</a></p>
-                    <p><span>S</span><a href="javascript:;">上海</a><a href="javascript:;">山东</a><a href="javascript:;">山西</a><a href="javascript:;">四川</a><a href="javascript:;">陕西</a></p>
-                    <p><span>T</span><a href="javascript:;">台湾</a><a href="javascript:;">天津</a></p>
-                    <p><span>X</span><a href="javascript:;">西藏</a><a href="javascript:;">香港</a><a href="javascript:;">新疆</a></p>
-                    <p><span>Y</span><a href="javascript:;">云南</a></p>
-                    <p><span>Z</span><a href="javascript:;">浙江</a></p>
-                </div>
-            </div>
-
-            <ul class="top-nav">
-                <li class="login" ><a href="#">请登录</a><span>/</span>
-                    <div class="login-after"></div>
-                    <div class="logdropdown">
-                        <div class="login-img"></div>
-                        <p><a href="denlu.html">您好 ! [请登录]</a></p>
-                        <ul class="login-left">
-                            <li><a href="#">我的收藏</a></li>
-                            <li><a href="#">我的钱包</a></li>
-                            <li><a href="#">我的唯品币</a></li>
-                        </ul>
-                        <ul class="login-right">
-                            <li><a href="#">我的订单</a></li>
-                            <li><a href="#">我的优惠券</a></li>
-                            <li><a href="#">唯品金融</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="zhuce.html">注册</a><span>/</span></li>
-                <li><a href="#">我的订单</a><span>/</span></li>
-                <li class="collect"><a href="">我的收藏<i><s>◆</s></i></a><span>/</span>
-                    <div class="collect-after"></div>
-                    <div class="coldropdown">
-                        <ul class="collect-list">
-                            <li><a href="#">收藏的品牌(0)</a></li>
-                            <li><a href="#">收藏的商品(0)</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="club"><a href="">会员俱乐部<i><s>◆</s></i></a><span>/</span>
-                    <div class="club-after"></div>
-                    <div class="cludropdown">
-                        <ul class="club-list">
-                            <li><a href="#">俱乐部首页</a></li>
-                            <li><a href="#">唯品币兑换</a></li>
-                            <li><a href="#">免费抽大奖</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="service"><a href="">客户服务<i><s>◆</s></i></a><span>/</span>
-                    <div class="service-after"></div>
-                    <div class="serdropdown">
-                        <ul class="service-list">
-                            <li><a href="#">联系客服</a></li>
-                            <li><a href="#">帮助中心</a></li>
-                            <li><a href="#">服务中心</a></li>
-                            <li><a href="#">知识产权投诉</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="phone"><div class="mob"></div><a href="">手机版</a><span>/</span>
-                    <div class="phone-after"></div>
-                    <div class="phodropdown">
-                        <div class="erweima">
-                            <img src="images/erweima.jpg" alt=""/>
-                        </div>
-                        <a href="#">随时逛 及时抢</a>
-                    </div>
-                </li>
-                <li class="more"><a href="">更多<i><s>◆</s></i></a>
-                    <div class="more-after"></div>
-                    <div class="mordropdown">
-                        <h1>合作专区</h1>
-                        <ul class="more-top">
-                            <li><a href="#">联名卡申请</a></li>
-                            <li><a href="#">唯品卡</a></li>
-                            <li><a href="#">支付专区</a></li>
-                        </ul>
-                        <h1>关于我们</h1>
-                        <ul class="more-bottom">
-                            <li><a href="#">Sell on vip</a></li>
-                            <li><a href="#">品牌招商</a></li>
-                            <li><a href="#">官方博客</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!--头部导航栏设置结束-->
-
-    <!-- 头部logo设置开始-->
-    <div class="head-logo">
-        <div class="center">
-            <div class="logo"><h1>唯品会</h1><a href=""><img src="images/logo.gif" alt=""/></a></div>
-            <div class="pic">
-                <a href=""><img src="images/pic1.png" alt=""/></a>
-                <a href=""><img src="images/pic2.png" alt=""/></a>
-                <a href=""><img src="images/pic3.png" alt=""/></a>
-            </div>
-            <div class="car">
-                <div class="car-ico"></div>
-                <div class="car-num"><span>0</span></div>
-                <a href="">我的购物袋</a>
-                <div class="car-after"></div>
-                <div class="cardropdown">
-                    <p>好像还未登录！<a href="#">马上登录</a>查看购物袋吧！</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 头部logo设置结束-->
-
-    <!-- 头部主导航设置开始-->
-    <div class="head-nav">
-        <div class="center">
-            <ul>
-                <li><a href="javascript:;">国庆狂欢购</a></li>
-                <li><a href="javascript:;">唯品国际</a></li>
-                <li><a href="javascript:;">母婴</a></li>
-                <li><a href="javascript:;">居家</a></li>
-                <li><a href="javascript:;">男士</a></li>
-                <li><a href="javascript:;">美妆</a></li>
-                <li><a href="javascript:;">唯品金融</a></li>
-                <li><a href="javascript:;">旅行</a></li>
-                <li class="nav-more"><a href="javascript:;">更多<i><s>◆</s></i></a><div class="nav-more-after"></div></li>
-                <div class="nav-mordropdown">
-                    <div class="navmore-main">
-                        <ul class="navmore-top">
-                            <li><a href="#"><img src="images/img1.jpg" alt=""/></a><div></div><p>女装</p></li>
-                            <li style="margin: 0 16px"><a href="#"><img src="images/img2.jpg" alt=""/></a><div></div><p>鞋包</p></li>
-                            <li><a href="#"><img src="images/img3.jpg" alt=""/></a><div></div><p>配饰</p></li>
-                        </ul>
-                        <ul class="navmore-bottom">
-                            <li><a href="#"><img src="images/img4.jpg" alt=""/></a><div></div><p>运动</p></li>
-                            <li style="margin: 0 16px"><a href="#"><img src="images/img5.jpg" alt=""/></a><div></div><p>汽车</p></li>
-                            <li><a href="#"><img src="images/img6.jpg" alt=""/></a><div></div><p>爱丽奢</p></li>
-                        </ul>
-                    </div>
-                </div>
-                <li class="notice"><div class="notic-ico"></div><a href="javascript:;">预告</a></li>
-                <li class="classify"><div class="classify-ico"></div><a href="javascript:;">分类</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- 头部主导航设置结束-->
-</header>
-<!--头部设置结束-->
-<!--广告轮播图设置开始-->
-<div class="banner">
-    <div class="inner_nc">
-        <div class="lunbo">
-            <ul id="img_box" class="img">
-                <li><img src="images/01.jpg" alt=""/></li>
-                <li><img src="images/02.jpg" alt=""/></li>
-                <li><img src="images/03.jpg" alt=""/></li>
-                <li><img src="images/04.jpg" alt=""/></li>
-                <li><img src="images/05.jpg" alt=""/></li>
-                <li><img src="images/01.jpg" alt=""/></li>
-            </ul>
-            <ul id="circle_box" class="circle">
-                <!--<li><a href="#">1</a></li>-->
-                <!--<li><a href="#">2</a></li>-->
-                <!--<li><a href="#">3</a></li>-->
-                <!--<li><a href="#">4</a></li>-->
-                <!--<li><a href="#">5</a></li>-->
-            </ul>
-        </div>
-    </div>
-</div>
-<!--广告轮播图设置结束-->
-
-
-<!--主体内容设置开始-->
-<div class="content" id="content">
-    <div class="title" id="title">
-        <ul id="firstUl">
-            <li id="firstLi" style="margin-top: 4px"><a href="#fir_b"><span>精装</span></a></li>
-            <li><a href="#first"><span>女装</span></a></li>
-            <li><a href="#second"><span>鞋包</span></a></li>
-            <li><a href="#third"><span>男士</span></a></li>
-            <li><a href="#fourth"><span>运动</span></a></li>
-            <li><a href="#fifth"><span>饰品</span></a></li>
-            <li><a href="#sixth"><span>美妆</span></a></li>
-            <li><a href="#seventh"><span>母婴</span></a></li>
-            <li><a href="#eighth"><span>居家</span></a></li>
-            <li><a href="#ninth"><span>生活</span></a></li>
-            <li><a href="#tenth"><span>国际</span></a></li>
-            <li style="border:none;"><a href="#eleventh"><span>预告</span></a></li>
-        </ul>
-    </div>
-    <div class="inner_nc">
-<!-- 精装-->
-    <div class="firstBox" id="fir_b">
-        <img src="images/today_DDp.png" style="width: 1000px;"/>
-        <div class="left" id="left">
-            <div class="ls_fir_imgBox" style="background:url('images/fir_l1.jpg') no-repeat;margin-right: 20px">
-                <div class="fir_imgBox">
-                    <ul>
-                        <li style="margin-left: 15px;"><a href="#"><img src="images/ls_hid_l1.jpg"/><span>¥480</span></a></li>
-                        <li><a href="#"><img src="images/ls_hid_l2.jpg"/><span>¥480</span></a></li>
-                        <li style="margin-right:0px;"><a href="#"><img src="images/ls_hid_l3.jpg"/><span>¥480</span></a></li>
-                    </ul>
-                    <div class="fir_other">
-                        <div class="fl"><img src="images/fir_other_l1.png"/></div>
-                        <div class="fl"><a href="#"><span><b></b><p>收藏品牌</p></span></a></div>
-                        <div class="fr"><input type="button" value="进入专场"/></div>
-                    </div>
-                </div>
-            </div>
-            <div class="ls_fir_imgBox" style="background:url('images/fir_l1.jpg') no-repeat">
-                <div class="fir_imgBox">
-                    <ul>
-                        <li style="margin-left: 15px;"><a href="#"><img src="images/ls_hid_l1.jpg"/><span>¥480</span></a></li>
-                        <li><a href="#"><img src="images/ls_hid_l2.jpg"/><span>¥480</span></a></li>
-                        <li style="margin-right:0px;"><a href="#"><img src="images/ls_hid_l3.jpg"/><span>¥480</span></a></li>
-                    </ul>
-                    <div class="fir_other">
-                        <div class="fl"><img src="images/fir_other_l1.png"/></div>
-                        <div class="fl"><a href="#"><span><b></b><p>收藏品牌</p></span></a></div>
-                        <div class="fr"><input type="button" value="进入专场"/></div>
-                    </div>
-                </div>
-            </div>
-            <div class="ls_fir_imgBox" style="background:url('images/fir_l1.jpg') no-repeat;margin-right: 20px">
-                <div class="fir_imgBox">
-                    <ul>
-                        <li style="margin-left: 15px;"><a href="#"><img src="images/ls_hid_l1.jpg"/><span>¥480</span></a></li>
-                        <li><a href="#"><img src="images/ls_hid_l2.jpg"/><span>¥480</span></a></li>
-                        <li style="margin-right:0px;"><a href="#"><img src="images/ls_hid_l3.jpg"/><span>¥480</span></a></li>
-                    </ul>
-                    <div class="fir_other">
-                        <div class="fl"><img src="images/fir_other_l1.png"/></div>
-                        <div class="fl"><a href="#"><span><b></b><p>收藏品牌</p></span></a></div>
-                        <div class="fr"><input type="button" value="进入专场"/></div>
-                    </div>
-                </div>
-            </div>
-            <div class="ls_fir_imgBox" style="background:url('images/fir_l1.jpg') no-repeat">
-                <div class="fir_imgBox">
-                    <ul>
-                        <li style="margin-left: 15px;"><a href="#"><img src="images/ls_hid_l1.jpg"/><span>¥480</span></a></li>
-                        <li><a href="#"><img src="images/ls_hid_l2.jpg"/><span>¥480</span></a></li>
-                        <li style="margin-right:0px;"><a href="#"><img src="images/ls_hid_l3.jpg"/><span>¥480</span></a></li>
-                    </ul>
-                    <div class="fir_other">
-                        <div class="fl"><img src="images/fir_other_l1.png"/></div>
-                        <div class="fl"><a href="#"><span><b></b><p>收藏品牌</p></span></a></div>
-                        <div class="fr"><input type="button" value="进入专场"/></div>
-                    </div>
-                </div>
-            </div>
-            <div class="ls_fir_imgBox" style="background:url('images/fir_l1.jpg') no-repeat;margin-right: 20px">
-                <div class="fir_imgBox">
-                    <ul>
-                        <li style="margin-left: 15px;"><a href="#"><img src="images/ls_hid_l1.jpg"/><span>¥480</span></a></li>
-                        <li><a href="#"><img src="images/ls_hid_l2.jpg"/><span>¥480</span></a></li>
-                        <li style="margin-right:0px;"><a href="#"><img src="images/ls_hid_l3.jpg"/><span>¥480</span></a></li>
-                    </ul>
-                    <div class="fir_other">
-                        <div class="fl"><img src="images/fir_other_l1.png"/></div>
-                        <div class="fl"><a href="#"><span><b></b><p>收藏品牌</p></span></a></div>
-                        <div class="fr"><input type="button" value="进入专场"/></div>
-                    </div>
-                </div>
-            </div>
-            <div class="ls_fir_imgBox" style="background:url('images/fir_l1.jpg') no-repeat">
-                <div class="fir_imgBox">
-                    <ul>
-                        <li style="margin-left: 15px;"><a href="#"><img src="images/ls_hid_l1.jpg"/><span>¥480</span></a></li>
-                        <li><a href="#"><img src="images/ls_hid_l2.jpg"/><span>¥480</span></a></li>
-                        <li style="margin-right:0px;"><a href="#"><img src="images/ls_hid_l3.jpg"/><span>¥480</span></a></li>
-                    </ul>
-                    <div class="fir_other">
-                        <div class="fl"><img src="images/fir_other_l1.png"/></div>
-                        <div class="fl"><a href="#"><span><b></b><p>收藏品牌</p></span></a></div>
-                        <div class="fr"><input type="button" value="进入专场"/></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-<!-- 女装-->
-    <div class="Box" id="first">
-        <div class="header" >
-            <img src="images/woman_2ad.png"/>
-             <span class="fr"><a href="#">全部女装品牌 ></a></span>
-        </div>
-        <div class="leftSide" id="leftSide">
-            <ul>
-                <li><a href="#"><img src="images/fir_l1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                <li><a href="#"><img src="images/fir_l2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                <li><a href="#"><img src="images/fir_l3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-            </ul>
-        </div>
-        <div class="rightSide" id="rightSide">
-            <ul>
-                <li><a href="#"><img src="images/fir_r1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                <li><a href="#"><img src="images/fir_r2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                <li><a href="#"><img src="images/fir_r3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-            </ul>
-        </div>
-    </div>
-        <div class="box_footer">
-            <button>逛更多的女装品牌</button>
-        </div>
-
-
-<!-- 鞋包系列-->
-        <div class="Box"  id="second">
-            <div class="header">
-                <img src="images/shoe.png"/>
-                <span class="fr"><a href="#">全部鞋包品牌 ></a></span>
-            </div>
-            <div class="leftSide">
-                <ul>
-                    <li><a href="#"><img src="images/sec_l1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/sec_l2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/sec_l3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-            <div class="rightSide">
-                <ul>
-                    <li><a href="#"><img src="images/sec_r1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/sec_r2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/sec_r3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="box_footer">
-            <button>逛更多的鞋包品牌</button>
-        </div>
-
-<!-- 男士系列-->
-        <div class="Box" id="third">
-            <div class="header">
-                <img src="images/men.png"/>
-                <span class="fr"><a href="#">全部男士品牌 ></a></span>
-            </div>
-            <div class="leftSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_l1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-            <div class="rightSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_r1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="box_footer">
-            <button>逛更多的男士品牌</button>
-        </div>
-<!-- 运动品牌系列-->
-        <div class="Box" id="fourth">
-            <div class="header">
-                <img src="images/sport.png"/>
-                <span class="fr"><a href="#">全部运动品牌 ></a></span>
-            </div>
-            <div class="leftSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_l1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-            <div class="rightSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_r1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="box_footer">
-            <button>逛更多的运动品牌</button>
-        </div>
-<!-- 饰品品牌系列-->
-        <div class="Box" id="fifth">
-            <div class="header">
-                <img src="images/watch.png"/>
-                <span class="fr"><a href="#">全部饰品品牌 ></a></span>
-            </div>
-            <div class="leftSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_l1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-            <div class="rightSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_r1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="box_footer">
-            <button>逛更多的饰品品牌</button>
-        </div>
-<!-- 美妆品牌系列-->
-        <div class="Box" id="sixth">
-            <div class="header">
-                <img src="images/beauty_wrf.png"/>
-                <span class="fr"><a href="#">全部美妆品牌 ></a></span>
-            </div>
-            <div class="leftSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_l1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-            <div class="rightSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_r1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="box_footer">
-            <button>逛更多的美妆品牌</button>
-        </div>
-<!-- 母婴品牌系列-->
-        <div class="Box" id="seventh">
-            <div class="header">
-                <img src="images/kid_zZb.png"/>
-                <span class="fr"><a href="#">全部母婴品牌 ></a></span>
-            </div>
-            <div class="leftSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_l1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-            <div class="rightSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_r1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="box_footer">
-            <button>逛更多的母婴品牌</button>
-        </div>
-<!-- 居家品牌系列-->
-        <div class="Box" id="eighth">
-            <div class="header">
-                <img src="images/home_zhs.png"/>
-                <span class="fr"><a href="#">全部居家品牌 ></a></span>
-            </div>
-            <div class="leftSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_l1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-            <div class="rightSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_r1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="box_footer">
-            <button>逛更多的居家品牌</button>
-        </div>
-<!-- 生活品牌系列-->
-        <div class="Box" id="ninth">
-            <div class="header">
-                <img src="images/life-titel.png"/>
-                <span class="fr"><a href="#">全部生活品牌 ></a></span>
-            </div>
-            <div class="leftSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_l1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-            <div class="rightSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_r1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="box_footer">
-            <button>逛更多的生活品牌</button>
-        </div>
-<!-- 国际品牌系列-->
-        <div class="Box" id="tenth">
-            <div class="header">
-                <img src="images/internet.png"/>
-                <span class="fr"><a href="#">全部国际品牌 ></a></span>
-            </div>
-            <div class="leftSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_l1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_l3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-            <div class="rightSide">
-                <ul>
-                    <li><a href="#"><img src="images/third_r1.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r2.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                    <li><a href="#"><img src="images/third_r3.jpg"/></a><span><b></b><p>收藏品牌</p></span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="box_footer">
-            <button>逛更多的国际品牌</button>
-        </div>
- <!-- 明日预告-->
-        <div class="yugao">
-                <img src="images/tomorrow.png" style="width: 1000px;" id="eleventh"/>
-            <div class="yugao_Box">
-                <ul>
-                    <li><a href="#"><img src="images/yugao_fr_1.jpg"/></a><span><b></b><p>收藏品牌</p></span><p>紫罗兰violet家纺专场</p>
-                        <div class="hid"><div class="input"><input type="text" placeholder="请输入邮箱或手机号"/><button>提醒我</button></div></div></li>
-                    <li><a href="#"><img src="images/yugao_fr_2.jpg"/></a><span><b></b><p>收藏品牌</p></span><p>紫罗兰violet家纺专场</p>
-                        <div class="hid"><div class="input"><input type="text" placeholder="请输入邮箱或手机号"/><button>提醒我</button></div></div></li>
-                    <li style="margin-right: 0px;"><a href="#"><img src="images/yugao_fr_3.jpg"/></a><span><b></b><p>收藏品牌</p></span><p>紫罗兰violet家纺专场</p>
-                        <div class="hid"><div class="input"><input type="text" placeholder="请输入邮箱或手机号"/><button>提醒我</button></div></div></li>
-                    <li><a href="#"><img src="images/yugao_fr_1.jpg"/></a><span><b></b><p>收藏品牌</p></span><p>紫罗兰violet家纺专场</p>
-                        <div class="hid"><div class="input"><input type="text" placeholder="请输入邮箱或手机号"/><button>提醒我</button></div></div></li>
-                    <li><a href="#"><img src="images/yugao_fr_2.jpg"/></a><span><b></b><p>收藏品牌</p></span><p>紫罗兰violet家纺专场</p>
-                        <div class="hid"><div class="input"><input type="text" placeholder="请输入邮箱或手机号"/><button>提醒我</button></div></div></li>
-                    <li style="margin-right: 0px;"><a href="#"><img src="images/yugao_fr_3.jpg"/></a><span><b></b><p>收藏品牌</p></span><p>紫罗兰violet家纺专场</p>
-                        <div class="hid"><div class="input"><input type="text" placeholder="请输入邮箱或手机号"/><button>提醒我</button></div></div></li>
-                    <li><a href="#"><img src="images/yugao_fr_1.jpg"/></a><span><b></b><p>收藏品牌</p></span><p>紫罗兰violet家纺专场</p>
-                        <div class="hid"><div class="input"><input type="text" placeholder="请输入邮箱或手机号"/><button>提醒我</button></div></div></li>
-                    <li><a href="#"><img src="images/yugao_fr_2.jpg"/></a><span><b></b><p>收藏品牌</p></span><p>紫罗兰violet家纺专场</p>
-                        <div class="hid"><div class="input"><input type="text" placeholder="请输入邮箱或手机号"/><button>提醒我</button></div></div></li>
-                    <li style="margin-right: 0px;"><a href="#"><img src="images/yugao_fr_3.jpg"/></a><span><b></b><p>收藏品牌</p></span><p>紫罗兰violet家纺专场</p>
-                        <div class="hid"><div class="input"><input type="text" placeholder="请输入邮箱或手机号"/><button>提醒我</button></div></div></li>
-                </ul>
-            </div>
-        </div>
-        <div class="yugao_footer">
-            <button>展示全部预告品牌</button>
-        </div>
-    </div>
-</div>
-</div>
+<body>
+	<!-- 头部导航 -->
+	<header class="header">
+		<div class="hd-box">
+			<div class="logo">
+				<h4><a href="index.html">个人简历</a></h4>
+				<p><a href="index.html">RESUME.</a></p>
+			</div>
+			<nav class="nav">
+				<ul id="menu">
+					<li data-menuanchor="page1"><a href="#page1">首页</a></li>
+					<li data-menuanchor="page2"><a href="#page2">个人简介</a></li>
+					<li data-menuanchor="page3"><a href="#page3">专业技能</a></li>
+					<li data-menuanchor="page4"><a href="#page4">项目经验</a></li>
+					<li data-menuanchor="page5"><a href="#page5">练习作品</a></li>
+					<li data-menuanchor="page6"><a href="#page6">自我评价</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- 主体 -->
+	<section id="dewbok">
+		<!-- 第一页 -->
+		<div class="section s1">
+			<div class="home">
+				<div class="title"></div>
+			</div>
+		</div>
+		<!-- 第二页 -->
+		<div class="section s2">
+			<img class="bg" src="img/bg2.png">
+			<div class="info-content">
+				<img class="img" src="img/images.jpg">
+				<div class="info">
+					<p class="info1">Intelligent out of diligence, genius is gained by accumulation</p>
+					<p class="line"></p>
+					<p class="info-name">我叫赵富国</p>
+					<p class="info-profession">一名前端开发工程师</p>
+					<p class="info-email">deronendless@gmail.com</p>
+					<p class="info-phone">Tel:15910557717</p>
+				</div>
+			</div>
+		</div>
+		<!-- 第三页 -->
+		<div class="section s3">
+			<div class="skill-moon"></div>
+			<div class="skill-cont">
+				<div class="skill-bg"></div>
+				<ul>
+					<li>
+						<div class="course">HTML:</div>
+						<div class="sline">
+							<div class="bar b1">65%</div>
+						</div>
+					</li>
+					<li>
+						<div class="course">CSS:</div>
+						<div class="sline">
+							<div class="bar b2">65%</div>
+						</div>
+					</li>
+					<li>
+						<div class="course">JavaScript:</div>
+						<div class="sline">
+							<div class="bar b3">60%</div>
+						</div>
+					</li>
+					<li>
+						<div class="course">JQuery:</div>
+						<div class="sline">
+							<div class="bar b4">60%</div>
+						</div>
+					</li>
+					<li>
+						<div class="course">AJax:</div>
+						<div class="sline">
+							<div class="bar b5">50%</div>
+						</div>
+					</li>
+					<li>
+						<div class="course">CSS3:</div>
+						<div class="sline">
+							<div class="bar b6">45%</div>
+						</div>
+					</li>
+					<li>
+						<div class="course">HTML5:</div>
+						<div class="sline">
+							<div class="bar b7">50%</div>
+						</div>
+					</li>
+					<li>
+						<div class="course">Angular:</div>
+						<div class="sline">
+							<div class="bar b8">35%</div>
+						</div>
+					</li>
+					<li>
+						<div class="course">PHP:</div>
+						<div class="sline">
+							<div class="bar b9">20%</div>
+						</div>
+					</li>
+					<li>
+						<div class="course">NodeJs:</div>
+						<div class="sline">
+							<div class="bar b10">30%</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 第四页 -->
+		<div class="section s4">
+			<div class="bg-l"></div>
+			<div class="bg-r"></div>
+			<div class="pj-content">
+				<div class="pj-box">
+					<div class="pj-left">
+						<a href="javascript:alert('未完待续,敬请期待..');"></a>
+					</div>
+					<div class="pj-right">
+						<div class="pj-list">
+							<div class="pj-list-left">
+								<div>2016.03</div>
+								<div>|</div>
+								<div>2016.06</div>
+							</div>
+							<div class="pj-list-right">
+								<div class="pj-list-name"><a href="http://www.qianjinlx.com/" target="_blonk">前进旅游</a></div>
+								<div class="pj-list-work"><span>项目简介：</span>为北京安捷之旅国际有限公司定制其官方网站,项目的整体设计美观大方，在用户交互设计上多采用较为柔和的方式实现，避免过于生硬的交互对用户产生不好的使用体验。</div>
+								<div class="pj-list-info"><span>具体职责：</span>1.该项目运用了前端框架angularjs,实现了模块化，以及数据的双向绑定。2.前端邮轮部分主要由我负责，包括页面html的编写，和angularjs数据的导入。</div>
+							</div>
+						</div>
+						<div class="pj-list">
+							<div class="pj-list-left">
+								<div>2015.11</div>
+								<div>|</div>
+								<div>2016.01</div>
+							</div>
+							<div class="pj-list-right">
+								<div class="pj-list-name"><a href="http://www.chunzhenji.com" target="_blonk">醇珍记</a></div>
+								<div class="pj-list-work"><span>项目简介：</span>为沈阳醇珍记电子商务有限公司定制其官方网站，项目的整体设计美观大方，在用户交互设计上多采用较为柔和的方式实现，避免过于生硬的交互对用户产生不好的使用体验。</div>
+								<div class="pj-list-info"><span>具体职责：</span>1.负责整站前端页面制作，DIV+CSS还原效果图设计;2.负责整站页面交互设计开发，如焦点图，选项卡等。</div>
+							</div>
+						</div>
+						<div class="pj-list">
+							<div class="pj-list-left">
+								<div>2015.07</div>
+								<div>|</div>
+								<div>2015.09</div>
+							</div>
+							<div class="pj-list-right">
+								<div class="pj-list-name"><a href="http://www.dhousegym.com" target="_blonk">帝豪斯</a></div>
+								<div class="pj-list-work"><span>项目简介：</span>为帝豪斯健身会定制其官方网站，以实现公司在网络上宣传推广和营销的目的。网站设计较为简单，相比传统企业网站多了些个性化的排版和交互效果。</div>
+								<div class="pj-list-info"><span>具体职责：</span>1.负责网站系统页面的制作工作,根据网页设计效果图进行页面切图和排版(DIV+CSS)2.负责网站前端交互，实现动态交互效果3.与后台开发工程师配合,对页面样式和交互效果进行分析和调试。</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 第五页 -->
+		<div class="section s5">
+			<div class="demo-content">
+				<a href="demo/变换曲线.html" target="_blank"><span>变换曲线</span></a>
+				<a href="demo/图片拖拽展示.html" target="_blank"><span>图片拖拽展示</span></a>
+				<a href="demo/屏风切换.html" target="_blank"><span>屏风切换</span></a>
+				<a href="demo/幻灯片.html" target="_blank"><span>幻灯片</span></a>
+				<a href="demo/弹球动画.html" target="_blank"><span>弹球动画</span></a>
+				<a href="demo/旋转立方体.html" target="_blank"><span>旋转立方体</span></a>
+				<a href="demo/无缝滚动.html" target="_blank"><span>无缝滚动</span></a>
+				<a href="demo/画板.html" target="_blank"><span>画板</span></a>
+			</div>
+		</div>
+		<!-- 第六页 -->
+		<div class="section s6">
+			<div class="bottom-bg"></div>
+			<div class="top-bg"></div>
+			<div class="Evaluate-cont">
+				<div class="topRight"></div>
+				<div class="leftBottom"></div>
+				<div class="hobby">
+					<h3 class="hobby-title">兴趣爱好</h3>
+					<div class="hobby-mess">
+						<p><写代码--最大乐趣/></p>
+						<p><逛github--浏览大牛的源码,查找热门开源项目/></p>
+						<p><浏览网页--没事时到处寻找设计精美的网页并收藏下来/></p>
+						<p><跑步--身体是最重要的/></p>
+						<p><听歌--代码写烦了就听歌轻松下/></p>
+					</div>
+				</div>
+				<div class="hobby">
+					<h3 class="hobby-title">自我评价</h3>
+					<div class="hobby-mess">
+						<p><善于在生活中学习，对美比较敏感，每当看到设计精美的网页，总会细细品味、学习并任性的收藏/></p>
+						<p><善于独立思考，追求更简洁有力的代码，工作认真负责，积极主动/></p>
+						<p><求知欲旺盛，学习能力强，眼界宽广，经常看技术书籍、浏览技术博客；/></p>
+						<p><长期关注和学习前端新技术，并应用到项目中/></p>
+						<p><乐观向上、性格坚韧、富于团队精神，具有良好的学习能力、高度的责任心、良好的沟通能力和团队合作意识，能迅速融入新群体中/></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="dest/all.min.js"></script>
+	<script>
+		$(function(){
+			$('#dewbok').fullpage({
+				navigationTooltips:['首页','个人简介','专业技能','项目经验','练习作品','自我评价'],
+				navigationColor:'red',
+				navigation:true,
+				anchors:['page1','page2','page3','page4','page5','page6'],
+				verticalCentered:false,
+				resize:true,
+				menu:'#menu'
+			})		
+		})
+	</script>
 </body>
 </html>
